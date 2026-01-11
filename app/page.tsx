@@ -15,16 +15,10 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <Link 
-                href="/articles" 
+                href="/articles/heat-pump-ready" 
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
               >
                 Read Our Guides
-              </Link>
-              <Link 
-                href="/resources" 
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
-              >
-                Find Rebates
               </Link>
             </div>
           </div>
@@ -55,35 +49,27 @@ export default function Home() {
       <section className="py-16">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl font-bold mb-8">Understanding Heat Pumps</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/articles/zehes-mandate-explained" className="block border rounded-lg p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-3">Maryland's ZEHES Mandate Explained</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/articles/heat-pump-ready" className="block border rounded-lg p-6 hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-3">Is Your Home Heat Pump Ready?</h3>
               <p className="text-gray-600 mb-4">
-                What you need to know about the 180,000-home electrification requirement and how it affects you.
+                Complete readiness checklist covering electrical, insulation, and permit requirements.
               </p>
               <span className="text-blue-600 font-semibold">Read More →</span>
             </Link>
             
-            <Link href="/articles/heat-pump-basics" className="block border rounded-lg p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-3">Heat Pump Basics for DMV Homeowners</h3>
+            <Link href="/articles/questions-for-contractors" className="block border rounded-lg p-6 hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-3">15 Questions to Ask Contractors</h3>
               <p className="text-gray-600 mb-4">
-                How heat pumps work, why they're efficient, and what makes them suitable for Maryland's climate.
+                Vet heat pump installers with these essential qualification questions.
               </p>
               <span className="text-blue-600 font-semibold">Read More →</span>
             </Link>
             
-            <Link href="/articles/rebates-incentives" className="block border rounded-lg p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-3">Complete Guide to Heat Pump Rebates</h3>
+            <Link href="/articles/why-heat-pumps-fail" className="block border rounded-lg p-6 hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold mb-3">Why Heat Pumps Fail</h3>
               <p className="text-gray-600 mb-4">
-                Stack federal tax credits with Maryland rebates to save $10,000+ on your heat pump installation.
-              </p>
-              <span className="text-blue-600 font-semibold">Read More →</span>
-            </Link>
-            
-            <Link href="/articles/contractor-selection" className="block border rounded-lg p-6 hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-3">How to Choose a Heat Pump Contractor</h3>
-              <p className="text-gray-600 mb-4">
-                What to look for in installers, red flags to avoid, and questions to ask before signing.
+                8 installation mistakes that cause problems and how to avoid them.
               </p>
               <span className="text-blue-600 font-semibold">Read More →</span>
             </Link>
@@ -96,14 +82,8 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Learn More?</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Get our complete guide to heat pump installation in Maryland, including rebate calculators and contractor checklists.
+            Get expert guidance on heat pump installation in Maryland.
           </p>
-          <Link 
-            href="/resources" 
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
-          >
-            Access Free Resources
-          </Link>
         </div>
       </section>
     </div>

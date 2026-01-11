@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Articles */}
+      {/* Featured Articles - FIXED LINKS */}
       <section className="py-16">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl font-bold mb-8">Understanding Heat Pumps</h2>

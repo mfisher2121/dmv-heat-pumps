@@ -1,26 +1,90 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Better link styling */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Article content styling */
+.prose {
+  color: #374151;
+  max-width: none;
+}
+
+.prose h2 {
+  color: #111827;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.prose h3 {
+  color: #1f2937;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  color: #4b5563;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Better colored boxes */
+.prose .bg-gray-50 {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.prose .bg-blue-50 {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.prose .bg-yellow-50 {
+  background-color: #fefce8;
+  border: 1px solid #fde047;
+}
+
+.prose .bg-red-50 {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.prose .bg-green-50 {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.prose .bg-blue-600 {
+  background-color: #2563eb;
 }
